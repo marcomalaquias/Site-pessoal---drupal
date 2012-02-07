@@ -11,7 +11,7 @@
 	<div id="header" class="clearfix">
 		<div class="grid">
 			<!-- Text Logo -->
-			<h1 id="logo" class="grid_4">Marco Malaquias</h1>
+			<h1 id="logo" class="grid_4"><a href="<?php echo base_path(); ?>">Marco Malaquias</a></h1>
 			
 			<!-- Navigation Menu -->
 			<ul id="navigation" class="grid_8">
@@ -27,43 +27,9 @@
 		<div class="hr grid_12">&nbsp;</div>
 	</div>
 
-	<div id="wrapper" class="container_12 clearfix">	
-		<!-- Featured Image Slider -->
-		<div id="featured" class="clearfix grid_12">
-			<ul> 
-				<li>
-					<a href="portfolio_single.html">
-						<span>Read about this project 1Read about this project 1Read about this project 1
-						Read about this project 1Read about this project 1Read about this project 1</span>
-						<img src="<?php echo $base_path . $path_to_theme ?>/html/images/600x300.gif" alt="" />
-					</a>
-				</li>  
-				<li>
-					<a href="portfolio_single.html">
-						<span>Read about this project 2</span>
-						<img src="<?php echo $base_path . $path_to_theme ?>/html/images/600x300.gif" alt="" />
-					</a>	
-				</li>  
-				<li>
-					<a href="portfolio_single.html">
-						<span>Read about this project 3</span>
-						<img src="<?php echo $base_path . $path_to_theme ?>/html/images/600x300.gif" alt="" />
-					</a>
-				</li>  
-				<li>
-					<a href="portfolio_single.html">
-						<span>Read about this project 4</span>
-						<img src="<?php echo $base_path . $path_to_theme ?>/html/images/600x300.gif" alt="" />
-					</a>
-				</li>  
-				<li>
-					<a href="portfolio_single.html">
-						<span>Read about this project 5</span>
-						<img src="<?php echo $base_path . $path_to_theme ?>/html/images/600x300.gif" alt="" />
-					</a>
-				</li>  
-			</ul> 
-		</div>
+	<div id="wrapper" class="container_12 clearfix">
+		<?php echo $content; ?>	
+
 		<!-- <div class="hr grid_12 clearfix">&nbsp;</div> -->
 			
 		<!-- Caption Line -->
@@ -131,28 +97,6 @@
 	<!-- Scripts -->
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
 	<?php echo $scripts ?>
-
-	<script type="text/javascript">		
-		$(document).ready(function() { //Start up our Featured Project Carosuel
-			var interval;
-
-			$('#featured ul').roundabout({
-				easing: 'easeOutInCirc',
-				duration: 1000
-			}).hover(
-				function() { clearInterval(interval); },
-				function() { interval = startAutoPlay(); }
-			);
-
-			function startAutoPlay() {
-				return setInterval(function() {
-					$('#featured ul').roundabout_animateToNextChild();
-				}, 5000);
-			}
-
-			interval = startAutoPlay();
-		});
-	</script>  
 
 	<!--[if IE 6]>
 	<script src="js/DD_belatedPNG_0.0.8a-min.js"></script>

@@ -112,8 +112,8 @@ ol									{padding: 0 0 0 5px;}
 	.button:active						{top:1px;}
 	
 /* Site Logo */
-
-	h1#logo 							{font-size:35px; font-weight:normal; margin-top:30px; color:#000000;}
+h1#logo 							{font-size:35px; font-weight:normal; margin-top:30px; color:#000000;}
+h1#logo a {font-size:35px; font-weight:normal; color:#000000;}
 
 /* Site Navigation */
 
@@ -163,18 +163,54 @@ ol									{padding: 0 0 0 5px;}
 	
 /* Common Scroller Styles */
 
-	.roundabout-holder 					{list-style:none; width:500px; height:300px; margin:0px auto;}
-	.roundabout-moveable-item 			{font-size:12px!important; height:300px; width:600px; cursor:pointer; padding:5px; border:1px solid #aaaaaa; -webkit-border-radius:5px; -moz-border-radius:5px; background:#f9f9f9;}
-	.roundabout-moveable-item img 		{height:100%; width:100%; background-color:#FFFFFF; margin:0;}
-	.roundabout-in-focus 				{cursor:auto;}
-	.roundabout-in-focus:hover			{-webkit-box-shadow:0px 0px 20px #787878; -moz-box-shadow:0px 0px 20px #787878; background:#f9f9f9;}
-	.roundabout-holder span				{display:none; font-size:12px;}
-	.roundabout-in-focus:hover span		{display:inline; position:absolute; bottom:5px; right:5px; padding:8px 20px; background:#f9f9f9; color:#000000; z-index:999; -webkit-border-top-left-radius: 5px; -moz-border-radius-topLeft: 5px; font-size : 12px;border-left:1px solid #aaaaaa; border-top:1px solid #aaaaaa; }
-	.roundabout a:active,
-	.roundabout a:focus,
-	.roundabout a:visited				{outline:none; text-decoration:none;}
-	.roundabou li 						{margin:0}
-	a img								{border:none; outline:0;}
+.roundabout-holder 					{list-style:none; width:500px; height:300px; margin:0px auto;}
+.roundabout-moveable-item 			{font-size:12px!important; height:300px; width:600px; cursor:pointer; padding:5px; border:1px solid #aaaaaa; -webkit-border-radius:5px; -moz-border-radius:5px; background:#f9f9f9;}
+.roundabout-moveable-item img 		{height:100%; width:100%; background-color:#FFFFFF; margin:0;}
+.roundabout-in-focus 				{cursor:auto;}
+.roundabout-in-focus:hover			{-webkit-box-shadow:0px 0px 20px #787878; -moz-box-shadow:0px 0px 20px #787878; background:#f9f9f9;}
+/*
+.roundabout-holder h2				{display:none; font-size:12px; margin-bottom: 0px;}
+.roundabout-in-focus:hover h2 {
+	display:inline; 
+	position:absolute; 
+	bottom:5px; 
+	right:5px; 
+	padding:8px 20px; 
+	background:#f9f9f9; 
+	color:#000000; 
+	z-index:999; 
+	-webkit-border-top-left-radius: 5px; 
+	-moz-border-radius-topLeft: 5px; 
+	font-size : 12px;
+	border-left:1px solid #aaaaaa; 
+	border-top:1px solid #aaaaaa; 
+}
+*/
+
+#featured .roundabout-moveable-item h2 { display: none !important; }
+
+#featured .roundabout-in-focus h2 {
+	display: inline !important; 
+	position: absolute;
+	padding:8px 20px;
+	bottom: -15px; 
+	right:5px;
+	background:#f9f9f9; 
+	color:#000000; 
+	z-index:999; 
+	-webkit-border-top-left-radius: 5px; 
+	-moz-border-radius-topLeft: 5px; 
+	font-size : 12px;
+	border-left:1px solid #aaaaaa; 
+	border-top:1px solid #aaaaaa; 
+}
+
+
+.roundabout a:active,
+.roundabout a:focus,
+.roundabout a:visited				{outline:none; text-decoration:none;}
+.roundabou li 						{margin:0}
+a img								{border:none; outline:0;}
 
 /* Featured Image Slider */
 

@@ -35,3 +35,19 @@ function marcomalaquias_preprocess_page(&$vars) {
 	unset($js["module"]["sites/all/modules/contrib/wysiwyg/editors/js/none.js"]);
 	$vars['scripts'] = drupal_get_js('header', $js);
 }
+
+
+/**
+ * Para facilitar a listagem de resultados da variavel $fields
+ * @param Fields $fields
+ * @param boolean $value (opcional) exibe ou valores
+ * @author William Ochetski Hellas
+ */
+function testfor($fields, $values = false)
+{
+	if($fields != NULL && count($fields) > 0)
+		foreach($fields as $k => $v)
+			echo $k.($values?" => ".(isset($v->content)?$v->content:$v):'')."<br />".PHP_EOL;
+	else
+		return false;
+}
