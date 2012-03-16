@@ -6,12 +6,15 @@ core = 6.x
 engine = phptemplate
 
 
+stylesheets[all][] = html/css/fonts.css
 stylesheets[all][] = html/css/reset.css
 stylesheets[all][] = html/css/styles.css
+stylesheets[all][] = html/css/base.css
 
 
 scripts[] = html/js/jquery.roundabout-1.0.min.js
 scripts[] = html/js/jquery.easing.1.3.js
+scripts[] = html/js/jquery.cycle.js
 
 
 
