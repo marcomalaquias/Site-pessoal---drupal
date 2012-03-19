@@ -66,7 +66,7 @@ section p {
 
 #dicas article {
 	width: 152px;
-	height: 120px;
+	height: 152px;
 	margin-left: 9px;
 	padding: 4px;
 	position: relative;
@@ -75,7 +75,10 @@ section p {
 	border: 1px solid #e8e8e8;
 	background-color: #fdfdfd;
 }
-#dicas article:first-child { margin-left: 0; }
+
+#dicas article:first-child, #dicas article.primeiro-coluna { margin-left: 0; }
+
+#dicas article.multipla-linha { margin-top: 9px;}
 
 #dicas article p {
 	margin-bottom: 0;
@@ -103,10 +106,24 @@ section p {
 
 #dicas .eixo { margin-bottom: 10px; }
 #dicas .eixo .colecao {
-	margin-bottom: 25px;
+	margin-bottom: 6px;
 	width: 100%;
 	float: left;
 }
+
+
+
+/*
+- TAG CLOUD
+*/
+#tag-cloud .tags {
+	width: 1010px;
+	height: 152px;
+	padding: 4px;
+	border: 1px solid #e8e8e8;
+	background-color: #fdfdfd;
+}
+
 
 
 /*

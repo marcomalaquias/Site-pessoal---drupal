@@ -28,57 +28,17 @@
 	</div>
 
 	<div id="wrapper" class="container_12 clearfix">
-		<?php echo $content; ?>	
-
-
-		<section id="dicas">
-			<h2>Dicas</h2>
-
-			<div class="eixo">
-				<div class="colecao">
-					<article data-identifier="1">
-						<p><a href="dicas.html#indentifier=1">Compre máquinas e equipamentos certificados com o selo Procel</a></p>
-					</article>
-					<article data-identifier="2">
-						<p><a href="dicas.html#indentifier=2">Troque o papel branco por reciclado</a></p>
-					</article>
-					<article data-identifier="3">
-						<p><a href="dicas.html#indentifier=3">Faça coleta seletiva de resíduos recicláveis</a></p>
-					</article>
-					<article data-identifier="4">
-						<p><a href="dicas.html#indentifier=4">Faça manutenção nas áreas de energia, água e climatização</a></p>
-					</article>
-					<article data-identifier="5">
-						<p><a href="dicas.html#indentifier=5">Troque as lâmpadas incandescentes por fluorescentes</a></p>
-					</article>
-					<article data-identifier="6">
-						<p><a href="dicas.html#indentifier=5">Troque as lâmpadas incandescentes por fluorescentes</a></p>
-					</article>					
-				</div>
-				
-				<div class="colecao">
-					<article data-identifier="1">
-						<p><a href="dicas.html#indentifier=1">Compre máquinas e equipamentos certificados com o selo Procel</a></p>
-					</article>
-					<article data-identifier="2">
-						<p><a href="dicas.html#indentifier=2">Troque o papel branco por reciclado</a></p>
-					</article>
-					<article data-identifier="3">
-						<p><a href="dicas.html#indentifier=3">Faça coleta seletiva de resíduos recicláveis</a></p>
-					</article>
-					<article data-identifier="4">
-						<p><a href="dicas.html#indentifier=4">Faça manutenção nas áreas de energia, água e climatização</a></p>
-					</article>
-					<article data-identifier="5">
-						<p><a href="dicas.html#indentifier=5">Troque as lâmpadas incandescentes por fluorescentes</a></p>
-					</article>
-				</div>
-			</div>
-
-			<a href="dicas.html" class="saiba-mais">Todas as dicas</a>
-		</section>
+		<?php echo $content; ?>
 		
-	</div><!--end wrapper-->
+		<section id="tag-cloud">
+			<h2>Tag Cloud</h2>
+		
+			<div class="tags">
+			xyz					
+			</div>
+			
+		</section>
+	</div>
 
 	<div id="footer">
     	<div class="container">
@@ -115,30 +75,6 @@
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
 	<?php echo $scripts ?>
 	
-	<script type="text/javascript">
-		// Inicia o ciclo de fotos das Dicas
-		if ( $("#dicas").size() ) {
-			var paginacao = '\
-				<nav class="paginacao">\
-					<div>&nbsp;</div>\
-					<button type="button" class="anterior">anterior</button>\
-					<button type="button" class="proximo">proximo</button>\
-				</nav>';
-
-			$("#dicas").prepend(paginacao);			
-		
-			$("#dicas .eixo").cycle({
-				fx: "scrollHorz",
-				speed: 800,
-				timeout: 0,
-				prev: '#dicas nav button.anterior',
-				next: '#dicas nav button.proximo',
-				activePagerClass: "ativo",
-				pager: "#dicas nav.paginacao div"
-			});
-		}	
-	</script>
-
 	<!--[if IE 6]>
 	<script src="js/DD_belatedPNG_0.0.8a-min.js"></script>
 	<script>
