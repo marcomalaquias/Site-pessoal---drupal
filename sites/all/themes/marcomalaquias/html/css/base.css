@@ -229,7 +229,7 @@ nav.paginacao button.proximo { background-position: -8px 0; }
 /* FOOTER */
 #footer {
     background: url("../images/bg/bg_footer.png") repeat-x scroll 0 0 transparent;
-    min-height: 190px;
+    min-height: 100px;
     padding-top: 38px;
 }
 
@@ -238,7 +238,7 @@ nav.paginacao button.proximo { background-position: -8px 0; }
     border-radius: 5px 5px 5px 5px;
     margin: 0 auto;
     position: relative;
-    width: 970px;    
+    width: 1015px;    
 }
 #footer .container .links {
     float: left;
@@ -271,9 +271,9 @@ nav.paginacao button.proximo { background-position: -8px 0; }
 }
 
 #footer .container .social_share {
-    /*position: absolute;*/
-    right: -10px;
-    top: 50px;
+    position: relative;
+    right: -38px;
+    top: 41px;
 }
 #footer .container .social_share li {
     float: left;
@@ -290,6 +290,42 @@ nav.paginacao button.proximo { background-position: -8px 0; }
 }
 #footer .container .social_share .tw {
     background: url("../images/bg/bg_tweet_footer.png") no-repeat scroll 0 0 transparent;
+}
+
+
+#footer #box-twitter {
+	float: right;
+	width: 300px;
+}
+
+#footer #box-twitter .feed {
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	background: #ffffff; 
+	background: -moz-linear-gradient(top,#ffffff 1%, #f3f3f3 100%); 
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#ffffff), color-stop(100%,#f3f3f3)); 
+	background: -webkit-linear-gradient(top,#ffffff 1%,#f3f3f3 100%); 
+	background: -o-linear-gradient(top,#ffffff 1%,#f3f3f3 100%); 
+	background: -ms-linear-gradient(top,#ffffff 1%,#f3f3f3 100%); 
+	background: linear-gradient(top,#ffffff 1%,#f3f3f3 100%); 
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f3f3f3',GradientType=0 ); 
+	border: 1px solid #ccc !important;
+	margin-left: 52px;
+}
+
+#footer #box-twitter .feed a {
+    float: left !important;
+    margin-left: -52px !important;
+    margin-top: 5px;
+}
+
+#footer #box-twitter .feed p {
+    color: #848484;
+    font-family: arial;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 10px;
 }
 /* FIM - FOOTER */
 
