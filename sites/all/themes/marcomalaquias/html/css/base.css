@@ -20,6 +20,49 @@ ol, ul {
 }
 
 
+/* HEADER */
+#header2{
+	height:61px;
+	background:url(../images/bg/bg_header.png) 0 0 repeat-x;
+}
+
+#header2 .container {
+    margin: 0 auto;
+    position: relative;
+    width: 1015px;
+}
+
+#header2 .container .title { 
+    color: #FFFFFF;
+    font-family: "Lucida Grande",sans-serif;
+    font-size: 29px;
+    font-weight: lighter;
+    margin-top: 31px;
+    position: relative;
+    text-shadow: -1px -1px #000000;
+    top: 16px;
+}
+
+#header2 .container .links {
+	height: 35px;
+    overflow: hidden;
+    position: absolute;
+    right: 20px;
+    top: 28px; 	
+}
+#header2 .container .links  a {
+    color: #FFFFFF;
+    font-family: "Lucida Grande",sans-serif;
+    font-size: 15px;
+    font-weight: lighter;
+    margin-right: 21px;
+    padding-left: 5px;
+    text-shadow: -1px -1px #000000;	
+}
+/* FIM HEADER */
+
+
+
 section { margin-bottom: 20px; }
 
 section .saiba-mais { 
@@ -257,14 +300,17 @@ nav.paginacao button.proximo { background-position: -8px 0; }
     width: 230px;
 }
 #footer .container .links li {
-    float: left;
-    margin: 2px 0;
+    /*float: left;*/
+    margin: 10px 0;
     width: 115px;
 }
+#footer .container .links li.title { margin: 2px 0; }
+
 #footer .container .links li a {
     color: #CCCCCC;
     text-shadow: -1px -1px #171819;
     font-size: 1.3em;
+    margin-right: 7px;
 }
 #footer .container .languages li {
     width: 230px;
@@ -295,7 +341,7 @@ nav.paginacao button.proximo { background-position: -8px 0; }
 
 #footer #box-twitter {
 	float: right;
-	width: 300px;
+	width: 350px;
 }
 
 #footer #box-twitter .feed {
@@ -324,7 +370,6 @@ nav.paginacao button.proximo { background-position: -8px 0; }
     color: #848484;
     font-family: arial;
     font-size: 13px;
-    font-weight: bold;
     padding: 10px;
 }
 /* FIM - FOOTER */

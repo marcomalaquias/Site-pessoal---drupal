@@ -3,29 +3,34 @@
 <head>
 	<title><?php echo $head_title ?></title>
 	<?php echo $head ?>
-		
+	
 	<!-- Stylesheets -->
 	<?php echo $styles ?>
+
+	<style>
+	.fluid_container {
+		margin: 0 auto;
+		max-width: 1000px;
+		width: 100%;
+	}
+	</style>
 </head>
 <body>
-	<div id="header" class="clearfix">
-		<div class="grid">
-			<!-- Text Logo -->
-			<h1 id="logo" class="grid_4"><a href="<?php echo base_path(); ?>">Marco Malaquias</a></h1>
-			
-			<!-- Navigation Menu -->
-			<ul id="navigation" class="grid_8">
-				<li><a href="contact.html"><span class="meta">Get in touch</span><br />Contact Us</a></li>
-				<li><a href="blog.html"><span class="meta">Latest news</span><br />Blog</a></li>
-				<li><a href="portfolio.html"><span class="meta">Our latest work</span><br />Portfolio</a></li>
-					
-				<li><a href="about.html"><span class="meta">Who are we?</span><br />About</a></li>
-				<li><a href="index.html" class="current"><span class="meta">Homepage</span><br />Home</a></li>
-			</ul>
-			<div class="clear"></div>
+
+	<div id="header2">
+		<div class="container">
+			<a href="/" class="title" title="Marco Malaquias">Marco Malaquias</a>
+			<div class="links">
+				<a href="#">Blog</a>
+				<a href="#">Dicas</a>
+				<a href="#">Projetos</a>
+				<a href="#">Contato</a>
+			</div>
 		</div>
-		<div class="hr grid_12">&nbsp;</div>
 	</div>
+
+
+
 
 	<div id="wrapper" class="container_12 clearfix">
 		<!--
@@ -65,7 +70,24 @@
      <img src="http://192.168.20.10/equipe/mmalaquias/marcomalaquias.com.br/site/sites/default/files/post/416_W1946S-BF-1%5B1%5D.jpg?" alt="and more features" />
 </div>		
 -->
-	
+	<div id="destaques-principais" class="clearfix grid_12">	
+		<div class="fluid_container">
+        		<div class="camera_wrap camera_emboss" id="camera_wrap_3">
+            			<div data-thumb="http://www.pixedelic.com/plugins/camera/development/camera_1.0.6/images/slides/thumbs/big_bunny_fake.jpg" data-src="http://www.pixedelic.com/plugins/camera/development/camera_1.0.6/images/slides/big_bunny_fake.jpg">
+            				<iframe src="http://player.vimeo.com/video/2203727" width="100%" height="100%" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+            			</div>
+            			<div data-thumb="http://www.pixedelic.com/plugins/camera/development/camera_1.0.6/images/slides/thumbs/leaf.jpg" data-src="http://www.pixedelic.com/plugins/camera/development/camera_1.0.6/images/slides/leaf.jpg">
+               				 <div style="position:absolute; top:5%; left:5%; background:#000; color:#fff; padding:5px; width:25%" class="fadeIn camera_effected">This is an HTML element included in the transition effect</div>
+            			</div>
+            			<div data-thumb="http://www.pixedelic.com/plugins/camera/development/camera_1.0.6/images/slides/thumbs/road.jpg" data-src="http://www.pixedelic.com/plugins/camera/development/camera_1.0.6/images/slides/road.jpg" data-time="1500" data-trasPeriod="4000" data-link="http://www.google.com/" data-target="_blank">
+                			<div class="camera_caption fadeFromBottom">
+                    				Changed the time and the transition time of this slide
+                			</div>
+            			</div>
+        		</div><!-- #camera_wrap_3 -->
+    		</div><!-- .fluid_container -->
+	</div>
+
 		<?php echo $content; ?>
 		
 		
@@ -83,9 +105,11 @@
 	<div id="footer">
     	<div class="container">
       		<ul class="links jt">
-		        <li class="title">Jobandtalent</li>
-		        <li><a href="/pages/contact_us">Contact</a></li>
-		        <li><a href="http://premium.jobandtalent.com/">Premium Profiles</a></li>
+		        <li class="title">Páginas</li>
+		        <li><a href="<?php echo $base_path; ?>blog">Blog</a></li>
+		        <li><a href="<?php echo $base_path; ?>dicas">Dicas</a></li>
+			<li><a href="<?php echo $base_path; ?>projetos">Projetos</a></li>
+			<li><a href="<?php echo $base_path; ?>contato">Contato</a></li>
       		</ul>
 
 			<ul class="links languages ">
@@ -109,25 +133,31 @@
 	</div>
 	
 	<!-- Scripts -->
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
-	<?php echo $scripts ?>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<?php #echo $scripts ?>
 	
-	<script type="text/javascript" src="<?php echo base_path() . path_to_theme() ?>/html/js/jquery.orbit.min.js"></script>
+	<!-- <script type="text/javascript" src="<?php echo base_path() . path_to_theme() ?>/html/js/jquery.orbit.min.js"></script>
 	<script type="text/javascript">
   		$('#featured_orbit').orbit();	
-  	</script>
-	
-	<!--[if IE 6]>
-	<script src="js/DD_belatedPNG_0.0.8a-min.js"></script>
-	<script>
-	  /* EXAMPLE */
-	  DD_belatedPNG.fix('.button');
-	  
-	  /* string argument can be any CSS selector */
-	  /* .png_bg example is unnecessary */
-	  /* change it to what suits you! */
+  	</script> -->
+
+    <script type='text/javascript' src='http://www.pixedelic.com/plugins/camera/development/camera_1.0.6/scripts/jquery.mobile.customized.min.js'></script>
+    <script type='text/javascript' src='http://www.pixedelic.com/plugins/camera/development/camera_1.0.6/scripts/jquery.easing.1.3.js'></script> 
+    <script type='text/javascript' src='http://www.pixedelic.com/plugins/camera/development/camera_1.0.6/scripts/camera.js'></script> 
+    
+    <script type='text/javascript'>
+		jQuery(function(){			
+			jQuery('#camera_wrap_3').camera({
+				height: '56%',
+				loader: 'bar',
+				pagination: false,
+				thumbnails: true,
+				imagePath: 'http://www.pixedelic.com/plugins/camera/development/camera_1.0.6/images/',
+				time: 7000
+			});
+
+		});
 	</script>
-	<![endif]-->	
 
 </body>
 </html>

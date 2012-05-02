@@ -10,6 +10,7 @@ stylesheets[all][] = html/css/fonts.css
 stylesheets[all][] = html/css/reset.css
 stylesheets[all][] = html/css/styles.css
 stylesheets[all][] = html/css/base.css
+stylesheets[all][] = html/css/camera.css
 
 
 scripts[] = html/js/jquery.roundabout-1.0.min.js
