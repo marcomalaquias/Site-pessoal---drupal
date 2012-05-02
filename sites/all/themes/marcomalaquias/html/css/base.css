@@ -63,6 +63,28 @@ ol, ul {
 
 
 
+/* CONTENT */
+#wrapper {
+	background: url('../images/bg/bgcontent.png') repeat-x scroll 0px -63px transparent;
+	margin-bottom: 0px !important;
+	padding-top: 10px;
+}
+
+#wrapper #content { 
+	margin-left: auto;
+    margin-right: auto;
+    width: 1020px;	
+}
+
+/* FIM - CONTENT */
+
+#destaques-principais {
+	height: 610px;
+	padding-top: 5px;
+}
+
+
+
 section { margin-bottom: 20px; }
 
 section .saiba-mais { 
