@@ -9,43 +9,6 @@ DESCRIPTION: A premium business and portfolio theme.
 
 /* Global Styles */
 
-a:focus								{outline:1px dotted;}
-a									{color:#717171; text-decoration:none;}
-a:hover								{text-decoration:none;}
-a span								{font-size:90%;}
-h1									{font-size:25px;}
-h2									{font-size:23px;}
-h3									{font-size:21px;}
-h4									{font-size:19px;}
-h5									{font-size:17px;}
-h6									{font-size:15px;}
-ol									{list-style:decimal;}
-ul									{list-style:disc;}
-li									{margin-left:20px; position:relative;}
-p,
-li,
-dl									{line-height:18px;}
-p,
-dl,
-hr,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-ol,
-ul,
-pre,
-table,
-address,
-fieldset,
-img									{margin-bottom:20px;}
-
-ul li ul,
-ol li ol							{margin-bottom:0px;}
-ol									{padding: 0 0 0 5px;}
-
 	
 #header, #footer {
 	margin-top:7px; 

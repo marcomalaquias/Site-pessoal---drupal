@@ -21,24 +21,30 @@
 		<div class="container">
 			<a href="/" class="title" title="Marco Malaquias">Marco Malaquias</a>
 			<div class="links">
-				<a href="#">Blog</a>
-				<a href="#">Dicas</a>
-				<a href="#">Projetos</a>
-				<a href="#">Contato</a>
+				<a href="<?php echo $base_path; ?>blog">Blog</a>
+				<a href="<?php echo $base_path; ?>dicas">Dicas</a>
+				<a href="<?php echo $base_path; ?>projetos">Projetos</a>
+				<a href="<?php echo $base_path; ?>contato">Contato</a>
 			</div>
+			<form id="form-busca" action="<?php echo $base_path; ?>busca">
+				<input type="text" name="busca" value="" id="txt-busca" placeholder="Buscar" />
+				<input type="submit" value="" title="Busca" id="btn-busca-enviar">
+			</form>
 		</div>
 	</div>
 
 
 
 
-	<div id="wrapper">
+	<div id="wrapper" class="<?php echo $is_front ? 'home' : 'interna'; ?>">
 		<div id="content">
 			<?php echo $content; ?>
+			<!-- 
 			<section id="tag-cloud">
 				<h2>Tag Cloud</h2>			
 				<div class="tags">xyz</div>				
 			</section>
+			 -->
 		</div>
 	</div>
 
@@ -98,3 +104,4 @@
 	<?php endif; ?>
 </body>
 </html>
+

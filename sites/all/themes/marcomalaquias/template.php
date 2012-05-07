@@ -21,7 +21,11 @@ function marcomalaquias_preprocess_page(&$vars) {
 	$vars['path_to_theme'] = path_to_theme();
 
 	unset($vars['css']['all']['module']['modules/system/defaults.css']);
+	unset($vars['css']['all']['module']['modules/system/system.css']);
 
+	$vars['styles'] = drupal_get_css($vars['css']);
+	
+#var_dump($vars['css']);
 
 	$js = drupal_add_js(NULL, NULL, 'header'); //get header js files in an array
 
