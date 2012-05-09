@@ -6,7 +6,7 @@
 	
 	<!-- Stylesheets -->
 	<?php echo $styles ?>
-
+	
 	<style>
 	.fluid_container {
 		margin: 0 auto;
@@ -14,6 +14,8 @@
 		width: 100%;
 	}
 	</style>
+	
+	<!--[if lt IE 9]><script type="text/javascript" src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script></script><![endif]-->
 </head>
 <body>
 
